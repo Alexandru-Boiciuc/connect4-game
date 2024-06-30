@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4</title>
+    <style>
+        .board {
+            display: grid;
+            grid-template-columns: repeat(7, 60px);
+            gap: 5px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .cell {
+            width: 60px;
+            height: 60px;
+            background-color: #f1f1f1;
+            border: 2px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .red {
+            background-color: red;
+        }
+        .yellow {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="text-align: center;">
+        <h1>Connect 4</h1>
+        <div id="board" class="board"></div>
+        <button id="resetButton" style="margin-top: 20px;">Reset Game</button>
+        <p id="message" style="margin-top: 20px;"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
